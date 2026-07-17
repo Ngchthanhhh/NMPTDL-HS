@@ -1,0 +1,8 @@
+plt.figure(figsize=(10,5))
+df.groupby('Month')['Revenue'].sum().plot(kind='line', marker='o')
+plt.title('Biến động doanh thu hệ thống qua các tháng')
+plt.xlabel('Tháng')
+plt.ylabel('Doanh thu')
+plt.xticks(range(1,13))
+plt.tight_layout()
+plt.show()

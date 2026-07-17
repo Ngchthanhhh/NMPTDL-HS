@@ -1,0 +1,7 @@
+plt.figure(figsize=(10,5))
+df.groupby('Product_Category')['Revenue'].sum().plot(kind='bar')
+plt.title('Tổng doanh thu theo Danh mục sản phẩm')
+plt.xlabel('Danh mục')
+plt.ylabel('Doanh thu')
+plt.tight_layout()
+plt.show()
